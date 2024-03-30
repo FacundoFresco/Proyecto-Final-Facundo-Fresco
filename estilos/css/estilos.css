@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+.bodymain, .bodymain-2 {
+  background-color: rgb(44, 42, 42);
+}
+
+video {
+  width: 100%;
+  height: 850px;
+}
+
+.mainheader {
+  display: flex;
+  justify-content: space-around;
+}
+.mainheader #menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+.mainheader #menu ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 50px;
+  color: rgb(255, 255, 255);
+}
+.mainheader #menu ul li a:hover {
+  color: rgb(104, 100, 100);
+}
+.mainheader #menu .dropdown-menu li a {
+  color: gray;
+}
+.mainheader #menu .nav li .btn.btn-danger {
+  color: rgb(255, 255, 255);
+}
+.mainheader .logo {
+  margin-left: 30px;
+}
+.mainheader .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(248, 24, 24);
+}
+.mainheader .logo a span {
+  color: white;
+}
+.mainheader .login a, .mainheader .sing-in a {
+  text-decoration: none;
+  font-size: 50px;
+  color: rgb(248, 24, 24);
+}
+.mainheader .login a span, .mainheader .sing-in a span {
+  color: white;
+}
+
+.login-form, .sing-in-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 200px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  color: white;
+}
+.login-form a, .sing-in-form a {
+  text-decoration: none;
+  display: flex;
+  font-size: 13px;
+  justify-content: left;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  color: rgb(248, 59, 59);
+}
+.login-form a:hover, .sing-in-form a:hover {
+  color: rgb(253, 130, 130);
+}
+.login-form h2, .sing-in-form h2 {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.login-form form, .sing-in-form form {
+  width: 300px;
+}
+.login-form .form-group, .sing-in-form .form-group {
+  margin-bottom: 20px;
+}
+.login-form #password, .sing-in-form #password {
+  margin-right: 24px;
+}
+
+.sing-in-form #username-2 {
+  margin-right: 19px;
+}
+.sing-in-form #password-2 {
+  margin-right: 45px;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+footer .redes i {
+  color: white;
+  letter-spacing: 15px;
+  font-size: 50px;
+}
+footer p {
+  margin-bottom: 15px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a :hover {
+  color: rgb(42, 42, 221);
+}
+
+.bodymain-2 {
+  position: relative;
+}
+.bodymain-2 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.nav-2 ul li {
+  list-style: none;
+}
+
+#carouselExampleCaptions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+#carouselExampleCaptions img {
+  height: 860px;
+}
+
+.cartelera {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: white;
+}
+.cartelera .div1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.cartelera .poster {
+  margin-top: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+.cartelera .poster img {
+  width: 185px;
+  height: 278px;
+}
+.cartelera .poster :hover {
+  transform: scale(1.05);
+}
+.cartelera p {
+  margin-top: 10px;
+}
+
+@media (max-width: 1150px) {
+  div.nav {
+    display: none;
+  }
+}
+@media (min-width: 1151px) {
+  div.dropdown {
+    display: none;
+  }
+}
+@media (max-width: 769px) {
+  #carouselExampleCaptions {
+    display: none;
+  }
+}
+@media (min-width: 770px) {
+  .imagen-contenedor {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .bodymain-2 footer {
+    position: relative;
+  }
+  .imagen-contenedor {
+    position: relative;
+    margin-bottom: 20px;
+    border: 6px solid;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .imagen-contenedor :hover {
+    transform: scale(1.05);
+  }
+  .imagen-contenedor img {
+    height: 500px;
+    width: 100%;
+  }
+  .texto-en-imagen {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
